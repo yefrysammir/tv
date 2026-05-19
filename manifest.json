@@ -1,0 +1,22 @@
+{
+  "name": "Salem TV",
+  "short_name": "SalemTV",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0f0f1a",
+  "theme_color": "#0f0f1a",
+  "orientation": "portrait",
+  "scope": ".",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='48' fill='%236A5ACD'/%3E%3Cpath d='M96 48 L132 96 L96 112 L60 96 Z' fill='white'/%3E%3Cpath d='M96 112 L132 128 L96 144 L60 128 Z' fill='white' opacity='0.7'/%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='128' fill='%236A5ACD'/%3E%3Cpath d='M256 128 L352 256 L256 298 L160 256 Z' fill='white'/%3E%3Cpath d='M256 298 L352 341 L256 384 L160 341 Z' fill='white' opacity='0.7'/%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

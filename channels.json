@@ -1,0 +1,531 @@
+{
+  "templates": {
+    "1": "https://la14hd.com/vivo/canales.php?stream={DATAVALUE}",
+    "2": "https://streamtpnew.com/premier.php?stream={DATAVALUE}",
+    "3": "https://embed.saohgdasregions.fun/embed/{DATAVALUE}.html",
+	"4": "https://tvtvhd.com/vivo/canal.php?stream={DATAVALUE}"
+  },
+  "channels": [
+
+	{
+      "id": "1",
+      "dataValue": "liga1max",
+      "group": "liga1max",
+	  "groupName": "L1 MAX",
+	  "groupImage": "i/l1-ban.png",
+      "name": "L1 MAX",
+      "image": "i/l1.jpg",
+      "description": "Opción principal"
+    },
+	{
+      "id": "4",
+      "dataValue": "liga1max",
+      "group": "liga1max",
+	  "groupName": "L1 MAX",
+      "name": "L1 MAX",
+      "image": "i/l1.jpg",
+      "description": "Opción secundaria"
+    },
+    {
+      "id": "2",
+      "dataValue": "liga1max",
+      "group": "liga1max",
+	  "groupName": "L1 MAX",
+      "name": "L1 MAX",
+      "image": "i/l1.jpg",
+      "description": "Opción HD"
+    },
+	{
+      "id": "3",
+      "dataValue": "liga1max",
+      "group": "liga1max",
+	  "groupName": "L1 MAX",
+      "name": "L1 MAX",
+      "image": "i/l1.jpg",
+      "description": "Opción 480p"
+    },
+
+
+	{
+      "id": "2",
+      "dataValue": "fanatiz1",
+      "group": "Fanatiz",
+	  "groupName": "Fanatiz Channels",
+	  "groupImage": "i/fanatiz-ban.png",
+      "name": "Fanatiz 1",
+      "image": "i/fanatiz.jpg",
+      "description": "Opción HD"
+    },
+	{
+      "id": "2",
+      "dataValue": "fanatiz2",
+      "group": "Fanatiz2",
+"groupName": "Fanatiz Channels",
+      "name": "Fanatiz 2",
+      "image": "i/fanatiz.jpg",
+      "description": "Opción HD"
+    },
+	{
+      "id": "2",
+      "dataValue": "fanatiz3",
+      "group": "Fanatiz3",
+"groupName": "Fanatiz Channels",
+      "name": "Fanatiz 3",
+      "image": "i/fanatiz.jpg",
+      "description": "Opción HD"
+    },
+    {
+      "id": "2",
+      "dataValue": "fanatiz4",
+      "group": "Fanatiz4",
+"groupName": "Fanatiz Channels",
+      "name": "Fanatiz 4",
+      "image": "i/fanatiz.jpg",
+      "description": "Opción HD"
+    },
+    {
+      "id": "2",
+      "dataValue": "fanatiz5",
+      "group": "Fanatiz5",
+"groupName": "Fanatiz Channels",
+      "name": "Fanatiz 5",
+      "image": "i/fanatiz.jpg",
+      "description": "Opción HD"
+    },
+    {
+      "id": "2",
+      "dataValue": "fanatiz6",
+      "group": "Fanatiz6",
+"groupName": "Fanatiz Channels",
+      "name": "Fanatiz 6",
+      "image": "i/fanatiz.jpg",
+      "description": "Opción HD"
+    },
+    {
+      "id": "2",
+      "dataValue": "fanatiz7",
+      "group": "Fanatiz7",
+"groupName": "Fanatiz Channels",
+      "name": "Fanatiz 7",
+      "image": "i/fanatiz.jpg",
+      "description": "Opción HD"
+    },
+    {
+      "id": "2",
+      "dataValue": "fanatiz8",
+      "group": "Fanatiz8",
+"groupName": "Fanatiz Channels",
+      "name": "Fanatiz 8",
+      "image": "i/fanatiz.jpg",
+      "description": "Opción HD"
+    },
+    {
+      "id": "2",
+      "dataValue": "fanatiz9",
+      "group": "Fanatiz9",
+"groupName": "Fanatiz Channels",
+      "name": "Fanatiz 9",
+      "image": "i/fanatiz.jpg",
+      "description": "Opción HD"
+    },
+    {
+      "id": "2",
+      "dataValue": "fanatiz10",
+      "group": "Fanatiz10",
+"groupName": "Fanatiz Channels",
+      "name": "Fanatiz 10",
+      "image": "i/fanatiz.jpg",
+      "description": "Opción HD"
+    },
+
+{
+      "id": "1",
+      "dataValue": "dsports",
+      "group": "dsports",
+	  "groupName": "DSports",
+	  "groupImage": "i/dsports-ban.jpg",
+      "name": "Dsports",
+      "image": "i/dsports.jpg",
+      "description": "Opción principal"
+    },
+	{
+      "id": "4",
+      "dataValue": "dsports",
+      "group": "dsports",
+"groupName": "DSports",
+      "name": "DSports",
+      "image": "i/dsports.jpg",
+      "description": "Opción secundaria"
+    },
+    {
+      "id": "2",
+      "dataValue": "dsports",
+      "group": "dsports",
+"groupName": "DSports",
+      "name": "DSports",
+      "image": "i/dsports.jpg",
+      "description": "Opción HD"
+    },
+	{
+      "id": "3",
+      "dataValue": "directvsports",
+      "group": "dsports",
+"groupName": "DSports",
+      "name": "DSports",
+      "image": "i/dsports.jpg",
+      "description": "Opción 480p"
+    },
+    
+    
+    {
+      "id": "1",
+      "dataValue": "dsports2",
+      "group": "dsports2",
+	  "groupName": "DSports",
+	  "groupImage": "i/dsports-ban.jpg",
+      "name": "Dsports 2",
+      "image": "i/dsports.jpg",
+      "description": "Opción principal"
+    },
+	{
+      "id": "4",
+      "dataValue": "dsports2",
+      "group": "dsports2",
+"groupName": "DSports",
+      "name": "DSports 2",
+      "image": "i/dsports.jpg",
+      "description": "Opción secundaria"
+    },
+    {
+      "id": "2",
+      "dataValue": "dsports2",
+      "group": "dsports2",
+"groupName": "DSports",
+      "name": "DSports 2",
+      "image": "i/dsports.jpg",
+      "description": "Opción HD"
+    },
+	{
+      "id": "3",
+      "dataValue": "directvsports2",
+      "group": "dsports2",
+"groupName": "DSports",
+      "name": "DSports 2",
+      "image": "i/dsports.jpg",
+      "description": "Opción 480p"
+    },
+    
+    
+    {
+      "id": "1",
+      "dataValue": "dsportsplus",
+      "group": "dsportsplus",
+	  "groupName": "DSports",
+	  "groupImage": "i/dsports-ban.jpg",
+      "name": "Dsports Plus",
+      "image": "i/dsports.jpg",
+      "description": "Opción principal"
+    },
+    {
+      "id": "4",
+      "dataValue": "dsportsplus",
+      "group": "dsportsplus",
+"groupName": "DSports",
+      "name": "DSports Plus",
+      "image": "i/dsports.jpg",
+      "description": "Opción secundaria"
+    },
+	{
+      "id": "2",
+      "dataValue": "dsportsplus",
+      "group": "dsportsplus",
+"groupName": "DSports",
+      "name": "DSports Plus",
+      "image": "i/dsports.jpg",
+      "description": "Opción HD"
+    },
+	{
+      "id": "3",
+      "dataValue": "directvsportsplus",
+      "group": "dsportsplus",
+"groupName": "DSports",
+      "name": "DSports Plus",
+      "image": "i/dsports.jpg",
+      "description": "Opción 480p"
+    },
+    
+
+    {
+      "id": "1",
+      "dataValue": "espn",
+      "group": "espn",
+	  "groupName": "ESPN",
+	  "groupImage": "i/espn-ban.webp",
+      "name": "ESPN",
+      "image": "i/espn.png",
+      "description": "Opción principal"
+    },
+	{
+      "id": "4",
+      "dataValue": "espn",
+      "group": "espn",
+      "name": "ESPN",
+      "image": "i/espn.png",
+      "description": "Opción secundaria"
+    },
+    {
+      "id": "2",
+      "dataValue": "espn",
+      "group": "espn",
+      "name": "ESPN",
+      "image": "i/espn.png",
+      "description": "Opción HD"
+    },
+	{
+      "id": "3",
+      "dataValue": "espn",
+      "group": "espn",
+      "name": "ESPN",
+      "image": "i/espn.png",
+      "description": "Opción 480p"
+    },
+
+
+    {
+      "id": "1",
+      "dataValue": "espn2",
+      "group": "espn2",
+	  "groupName": "ESPN 2",
+	  "groupImage": "i/espn-ban.webp",
+      "name": "ESPN 2",
+      "image": "i/espn.png",
+      "description": "Opción principal"
+    },
+	{
+      "id": "4",
+      "dataValue": "espn2",
+      "group": "espn2",
+      "name": "ESPN 2",
+      "image": "i/espn.png",
+      "description": "Opción secundaria"
+    },
+    {
+      "id": "2",
+      "dataValue": "espn2",
+      "group": "espn2",
+      "name": "ESPN 2",
+      "image": "i/espn.png",
+      "description": "Opción HD"
+    },
+	{
+      "id": "3",
+      "dataValue": "espn2",
+      "group": "espn2",
+      "name": "ESPN 2",
+      "image": "i/espn.png",
+      "description": "Opción 480p"
+    },
+
+
+	{
+      "id": "1",
+      "dataValue": "espn3",
+      "group": "espn3",
+	  "groupName": "ESPN 3",
+	  "groupImage": "i/espn-ban.webp",
+      "name": "ESPN 3",
+      "image": "i/espn.png",
+      "description": "Opción principal"
+    },
+	{
+      "id": "4",
+      "dataValue": "espn3",
+      "group": "espn3",
+      "name": "ESPN 3",
+      "image": "i/espn.png",
+      "description": "Opción secundaria"
+    },
+    {
+      "id": "2",
+      "dataValue": "espn3",
+      "group": "espn3",
+      "name": "ESPN 3",
+      "image": "i/espn.png",
+      "description": "Opción HD"
+    },
+	{
+      "id": "3",
+      "dataValue": "espn3",
+      "group": "espn3",
+      "name": "ESPN 3",
+      "image": "i/espn.png",
+      "description": "Opción 480p"
+    },
+    
+    
+    {
+      "id": "1",
+      "dataValue": "espn4",
+      "group": "espn4",
+	  "groupName": "ESPN 4",
+	  "groupImage": "i/espn-ban.webp",
+      "name": "ESPN 4",
+      "image": "i/espn.png",
+      "description": "Opción principal"
+    },
+	{
+      "id": "4",
+      "dataValue": "espn4",
+      "group": "espn4",
+      "name": "ESPN 4",
+      "image": "i/espn.png",
+      "description": "Opción secundaria"
+    },
+    {
+      "id": "2",
+      "dataValue": "espn4",
+      "group": "espn4",
+      "name": "ESPN 4",
+      "image": "i/espn.png",
+      "description": "Opción HD"
+    },
+	{
+      "id": "3",
+      "dataValue": "espn4",
+      "group": "espn4",
+      "name": "ESPN 4",
+      "image": "i/espn.png",
+      "description": "Opción 480p"
+    },
+    
+    
+    {
+      "id": "1",
+      "dataValue": "espn5",
+      "group": "espn5",
+	  "groupName": "ESPN 5",
+	  "groupImage": "i/espn-ban.webp",
+      "name": "ESPN 5",
+      "image": "i/espn.png",
+      "description": "Opción principal"
+    },
+	{
+      "id": "4",
+      "dataValue": "espn5",
+      "group": "espn5",
+      "name": "ESPN 5",
+      "image": "i/espn.png",
+      "description": "Opción secundaria"
+    },
+    {
+      "id": "2",
+      "dataValue": "espn5",
+      "group": "espn5",
+      "name": "ESPN 5",
+      "image": "i/espn.png",
+      "description": "Opción HD"
+    },
+	{
+      "id": "3",
+      "dataValue": "espn5",
+      "group": "espn5",
+      "name": "ESPN 5",
+      "image": "i/espn.png",
+      "description": "Opción 480p"
+    },
+    
+    
+    {
+      "id": "1",
+      "dataValue": "espn6",
+      "group": "espn6",
+	  "groupName": "ESPN 6",
+	  "groupImage": "i/espn-ban.webp",
+      "name": "ESPN 6",
+      "image": "i/espn.png",
+      "description": "Opción principal"
+    },
+	{
+      "id": "4",
+      "dataValue": "espn6",
+      "group": "espn6",
+      "name": "ESPN 6",
+      "image": "i/espn.png",
+      "description": "Opción secundaria"
+    },
+    {
+      "id": "2",
+      "dataValue": "espn6",
+      "group": "espn6",
+      "name": "ESPN 6",
+      "image": "i/espn.png",
+      "description": "Opción HD"
+    },
+	{
+      "id": "3",
+      "dataValue": "espn6",
+      "group": "espn6",
+      "name": "ESPN 6",
+      "image": "i/espn.png",
+      "description": "Opción 480p"
+    },
+    
+    
+    {
+      "id": "1",
+      "dataValue": "espn7",
+      "group": "espn7",
+	  "groupName": "ESPN 7",
+	  "groupImage": "i/espn-ban.webp",
+      "name": "ESPN 7",
+      "image": "i/espn.png",
+      "description": "Opción principal"
+    },
+	{
+      "id": "4",
+      "dataValue": "espn7",
+      "group": "espn7",
+      "name": "ESPN 7",
+      "image": "i/espn.png",
+      "description": "Opción secundaria"
+    },
+    {
+      "id": "2",
+      "dataValue": "espn7",
+      "group": "espn7",
+      "name": "ESPN 7",
+      "image": "i/espn.png",
+      "description": "Opción HD"
+    },
+	{
+      "id": "3",
+      "dataValue": "espn7",
+      "group": "espn7",
+      "name": "ESPN 7",
+      "image": "i/espn.png",
+      "description": "Opción 480p"
+    },
+
+
+{
+      "id": "3",
+      "dataValue": "atv",
+      "group": "ATV",
+	  "groupName": "ATV",
+	  "groupImage": "i/atv-ban.webp",
+      "name": "ATV",
+      "image": "i/atv.png",
+      "description": "Opción principal"
+    }
+
+  ],
+  "banners": [
+{
+  "title": "Mundial 2026",
+  "description": "¡Se siente el aire mundialista!",
+  "image": "i/mundial.jpg",
+  "content": "<p style='text-align:center;color:#A0A0B0;font-size:13px;' >Estamos trabajando para traerte toda la próxima programación del mundial MEX-USA-CAN 2026.</p>"
+}
+
+  ]
+}

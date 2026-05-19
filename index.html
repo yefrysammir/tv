@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Salem TV">
+  <meta name="theme-color" content="#0f0f1a">
+  <meta name="description" content="Reproductor multi-stream optimizado">
+  <title>Salem TV</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,1,0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%236A5ACD'/%3E%3Cpath d='M90 45 L120 90 L90 105 L60 90 Z' fill='white'/%3E%3Cpath d='M90 105 L120 120 L90 135 L60 120 Z' fill='white' opacity='0.7'/%3E%3C/svg%3E">
+</head>
+<body>
+  <!-- PRELOADER -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-box">
+      <img src="i/salem.png" alt="Salem TV" class="preloader-logo" onerror="this.style.display='none'">
+      <div class="preloader-spinner"></div>
+      <p class="preloader-text">Cargando…</p>
+    </div>
+  </div>
+
+  <div id="app">
+    <!-- HEADER -->
+    <header class="app-header" id="appHeader">
+      <img src="i/salem.png" alt="Salem TV" class="app-logo" onerror="this.style.display='none'">
+      <div class="search-wrap">
+        <span class="material-symbols-outlined search-ico">search</span>
+        <input type="text" id="searchInput" placeholder="Buscar canales…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        <button id="searchClear" class="search-clear material-symbols-outlined" aria-label="Limpiar">close</button>
+      </div>
+      <div class="header-actions">
+        <button id="qrBtn" class="icon-btn" aria-label="Donar">
+          <span class="material-symbols-outlined">qr_code_scanner</span>
+        </button>
+        <button id="infoBtn" class="icon-btn" aria-label="Información">
+          <span class="material-symbols-outlined">support_agent</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- HOME -->
+    <main id="homeView" class="view active">
+      <div id="resultsCount" class="results-count"></div>
+      <div id="channelsScroll" class="channels-scroll">
+        <div id="sectionsWrap" class="sections-wrap"></div>
+        <div id="emptyState" class="empty-state">
+          <span class="material-symbols-outlined empty-icon">search_off</span>
+          <p class="empty-text">No se encontraron canales</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- PLAYER (fixed 100%) -->
+    <div id="playerView" class="view">
+      <div class="player-top">
+        <button id="playerBack" class="player-back" aria-label="Regresar">
+          <span class="material-symbols-outlined">arrow_back_ios_new</span>
+          <span id="playerTitle" class="player-title">Canal</span>
+        </button>
+        <button id="optionsBtn" class="player-option-btn" aria-label="Opciones" style="display:none;">
+          <span class="material-symbols-outlined">format_list_bulleted</span>
+        </button>
+      </div>
+
+      <div class="player-media">
+        <div id="playerLoader" class="player-loader"><div class="spinner"></div></div>
+        <div id="iframeErrorOverlay" class="iframe-error" style="display:none;">
+          <span class="material-symbols-outlined iframe-error-icon">error</span>
+          <div class="iframe-error-title">Canal no responde</div>
+          <div class="iframe-error-desc">La señal no está disponible en este momento.</div>
+        </div>
+        <div class="player-video-box">
+          <video id="playerVideo" playsinline webkit-playsinline controls style="display:none;"></video>
+          <iframe id="playerFrame" allowfullscreen style="display:none;"></iframe>
+        </div>
+      </div>
+
+      <div class="player-bottom">
+        <button id="refreshBtn" class="ctrl-btn">
+          <span class="material-symbols-outlined">refresh</span> Refrescar
+        </button>
+        <div class="os-badges" id="osBadges">
+          <a id="osBannerAndroid" class="os-badge os-android" href="https://adguard.com/es/adguard-android/overview.html" target="_blank" rel="noopener" style="display:none;">
+            <span class="material-symbols-outlined">download</span> AdGuard
+          </a>
+          <a id="osBannerIOS" class="os-badge os-ios" href="https://apps.apple.com/pe/app/adblock-pro-para-safari/id1018301773" target="_blank" rel="noopener" style="display:none;">
+            <span class="material-symbols-outlined">download</span> AdBlock Safari
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- GENERIC SHEET (reutilizado para Opciones, QR, Info-banner) -->
+    <div id="sheetOverlay" class="sheet-overlay"></div>
+    <div id="optionsSheet" class="sheet">
+      <div class="sheet-handle"></div>
+      <div class="sheet-header">
+        <div class="sheet-title" id="sheetTitle">Opciones</div>
+        <div class="sheet-subtitle" id="sheetSubtitle">Selecciona una señal</div>
+      </div>
+      <div class="sheet-body" id="sheetBody"></div>
+      <button id="sheetCancel" class="sheet-cancel">Cancelar</button>
+    </div>
+
+    <!-- INFO SHEET -->
+    <div id="infoOverlay" class="sheet-overlay"></div>
+    <div id="infoSheet" class="sheet">
+      <div class="sheet-handle"></div>
+      <div class="sheet-header">
+        <div class="sheet-title">Información</div>
+        <div class="sheet-subtitle">Acerca de Salem TV</div>
+      </div>
+      <div class="sheet-body info-sheet-body">
+        <div class="info-content">
+          <h3>¿Cómo usar?</h3>
+          <p>Desliza horizontalmente en cada sección para ver los canales. Toca cualquier tarjeta para reproducir o ver opciones.</p>
+          <h3>¿Consume muchos datos?</h3>
+          <p>Depende de la calidad del stream. Usa Wi-Fi para mejor experiencia.</p>
+          <h3>¿Publicidad molesta?</h3>
+          <p>iOS: <b>Adblock for Safari</b> o <b>Brave</b>.<br>Android: <b>AdGuard</b> o <b>Brave</b>.</p>
+          <h3>Soporte</h3>
+          <p>Reportes y donaciones vía YAPE.</p>
+          <h3>Nota legal</h3>
+          <p>No alojamos señales propias. El contenido proviene de sitios externos.</p>
+          <p class="version">STV v2.1 – 2026</p>
+        </div>
+      </div>
+      <button id="infoCloseBtn" class="sheet-cancel">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- QR CONTENT EDITABLE (se lee desde JS) -->
+  <div id="qrSheetContent" style="display:none;">
+    <img src="i/yape.heic" alt="Yape QR" style="width:100%;max-width:140px;display:block;margin:0 auto 16px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.4);">
+    <a href="i/yape.heic" download="yape.heic" style="display:flex;align-items:center;justify-content:center;gap:6px;padding:0 16px;background:var(--primary);color:#fff;text-align:center;border-radius:20px;text-decoration:none;font-weight:500;font-size:14px;width:180px;margin:0 auto;height:40px;">
+      <span class="material-symbols-outlined" style="font-size:22px;font-weight:700!important">download</span>Descargar QR
+    </a>
+    <p style="margin-top:14px;text-align:center;color:#A0A0B0;font-size:13px;line-height:1.4;">Escanea el código para donar vía Yape.<br>Todas las donaciones nos ayudan a mantener y mejorar este proyecto.</p>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    (function(){
+      const ua = navigator.userAgent;
+      const android = document.getElementById('osBannerAndroid');
+      const ios = document.getElementById('osBannerIOS');
+      if (/Android/i.test(ua) && android) android.style.display = 'inline-flex';
+      else if (/iPad|iPhone|iPod/i.test(ua) && ios) ios.style.display = 'inline-flex';
+    })();
+  </script>
+</body>
+</html>
